@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fancybox - Fancy jQuery lightbox alternative</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        Hey there! This site is kept for historicabl purposes and represents
+        original version of the fancyBox.
+      </p>
+      <p>
+        The latest version is available here -
+        <a href="http://fancyapps.com/fancybox/3/">http://fancyapps.com</a>
+      </p>
+    </header>
+    <nav>
+      <div class="nav_box">
+        <div class="logo">
+          <a href="index.html">fancybox</a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="http://fancybox.net/howto">How to use</a></li>
+          <li><a href="http://fancybox.net/api">API & Options</a></li>
+          <li><a href="http://fancybox.net/blog">Tips & Tricks</a></li>
+          <li><a href="http://fancybox.net/faq">FAQ</a></li>
+          <li><a href="http://fancybox.net/support">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="blackBox" onclick="exitGallery();"></div>
+    <div class="gallery">
+      <div class="exit" onclick="exitGallery();">
+        <span>X</span>
+      </div>
+      <img src="images/1.jpg" />
+    </div>
+
+    <!-- <div class="textBox">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi
+        eu elit tempor facilisis id et neque. Nulla sit amet sem sapien.
+        Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh
+        adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at
+        blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium
+        varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque
+        ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros,
+        bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id
+        aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel,
+        iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget
+        non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum
+        sed nunc.
+      </p>
+      <span>Lorem ipsum dolor sit amet</span>
+    </div> -->
+
+    <section>
+      <article>
+        <ul>
+          <li>
+            <h1>what is it?</h1>
+            <p>
+              FancyBox is a tool for displaying images, html content and
+              multi-media in a Mac-style "lightbox" that floats overtop of web
+              page.
+            </p>
+            <p>
+              It was built using the
+              <a href="https://jquery.com/">jQuery library</a> . Licensed under
+              both <a href="https://jquery.com/"> MIT and GPL licenses</a>
+            </p>
+          </li>
+          <li>
+            <h1>Features</h1>
+            <ul>
+              <li>
+                Can display images, HTML elements, SWF movies, Iframes and also
+                Ajax requests
+              </li>
+              <li>Customizable through settings and CSS</li>
+              <li>Groups related items and adds navigation.</li>
+              <li>
+                If the mouse wheel plugin is included in the page then FancyBox
+                will respond to mouse wheel events as well
+              </li>
+              <li>Support fancy transitions by using easing plugin</li>
+              <li>Adds a nice drop shadow under the zoomed item</li>
+            </ul>
+          </li>
+          <li>
+            <h1>Examples</h1>
+            <ul>
+              <li>
+                <span>Different animations - 'fade', 'elastic' and 'none'</span>
+                <div class="images">
+                  <img src="images/1.jpg" onclick="imgClick(1);" />
+                  <img src="images/2.jpg" onclick="imgClick(2);" />
+                  <img src="images/3.jpg" onclick="imgClick(3);" />
+                </div>
+              </li>
+              <li>
+                <span
+                  >Different title positions - 'outside', 'inside' and
+                  'over'</span
+                >
+                <div class="images">
+                  <img src="images/4.jpg" onclick="imgClick(4);" />
+                  <img src="images/5.jpg" onclick="imgClick(5);" />
+                  <img src="images/6.jpg" onclick="imgClick(6);" />
+                </div>
+              </li>
+              <li>
+                <span>Image gallery (ps, try using mouse scroll wheel)</span>
+                <div class="images">
+                  <img src="images/7.jpg" onclick="imgClick(7);" />
+                  <img src="images/8.jpg" onclick="imgClick(8);" />
+                  <img src="images/9.jpg" onclick="imgClick(9);" />
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Various examples</h4>
+            <ul>
+              <li>
+                <a href="">us examples Inline - auto detect width / height </a>
+              </li>
+              <li><a href="">Inline - modal window </a></li>
+              <li><a href=""> Ajax - passing custom data</a></li>
+              <li><a href="">Iframe (75% width and height) </a></li>
+              <li><a href=""> Swf</a></li>
+              <li><a href=""> Example of callbacks</a></li>
+              <li><a href="">Non existing image </a></li>
+              <li><a href="">Non existing url </a></li>
+              <li><a href="">Google maps (iframe) </a></li>
+              <li><a href="">Youtube (iframe) </a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Examples of manual call</h4>
+            <ul>
+              <li><a href="">Image</a></li>
+              <li><a href="">Image gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+      <aside>
+        <div class="aside_column">
+          <h4>Past Release</h4>
+          <ul>
+            <li><a href="#">Version 1.3.4 (2010/11/11)</a></li>
+            <li><a href="http://fancybox.net/changelog/">Changelog</a></li>
+          </ul>
+          <span>Donate</span>
+        </div>
+        <div class="aside_column"></div>
+      </aside>
+    </section>
+
+    <footer>
+      <span>(c) 2008 - 2020 / fancybox.net</span>
+    </footer>
+
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/indexjq.js"></script>
+  </body>
+</html>

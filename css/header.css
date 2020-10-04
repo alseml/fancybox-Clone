@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 40px 30px;
+  width: 100%;
+  background: #ff4453;
+  color: white;
+
+  font-size: 17px;
+}
+
+header p:first-child {
+  margin-bottom: 12px;
+}
+
+header a {
+  color: white;
+  text-decoration: underline;
+}
